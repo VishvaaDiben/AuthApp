@@ -1,5 +1,6 @@
 {
   "expo": {
+    "entryPoint": "./App.js",
     "name": "UserAuthApp",
     "slug": "UserAuthApp",
     "version": "1.0.0",
