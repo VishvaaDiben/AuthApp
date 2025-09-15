@@ -1,52 +1,77 @@
-# Welcome to your Expo app 👋
+# 📱 User Authentication App (React Native + Expo)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A simple **React Native authentication flow** built with **Expo** and **React Navigation**.  
+Features include **Signup, Login, Logout, Persistent Sessions** (via AsyncStorage),  
+**real-time form validation**, and reusable **form components**.
 
-## Get started
+---
 
-1. Install dependencies
+## 🚀 Features
+- ✅ Signup, Login, and Logout flow
+- ✅ AsyncStorage persistence (keeps users logged in)
+- ✅ Form validation (email, password, required fields)
+- ✅ Reusable `Input` and `PasswordInput` components
+- ✅ Password visibility toggle (eye icon)
+- ✅ Real-time validation while typing
+- ✅ Disabled button until form is valid
+- ✅ Styled error messages under each input
+- ✅ Friendly UI with modern colors and spacing
 
+---
+
+## 📂 Project Structure
+UserAuthApp/
+│── App.js
+│── package.json
+│── README.md
+│
+├── src/
+│ ├── components/ # Reusable UI components
+│ │ ├── Input.js
+│ │ └── PasswordInput.js
+│ │
+│ ├── context/ # Global AuthContext (login/signup/logout)
+│ │ └── AuthContext.js
+│ │
+│ ├── navigation/ # App navigation stack
+│ │ └── AppNavigator.js
+│ │
+│ ├── screens/ # Screens (Login, Signup, Home)
+│ │ ├── LoginScreen.js
+│ │ ├── SignupScreen.js
+│ │ └── HomeScreen.js
+│ │
+│ ├── utils/ # Validation helpers
+│ │ └── validators.js
+│ │
+│ └── constants/ # App theme/colors
+│ └── styles.js
+
+
+---
+
+## ⚙️ Setup & Installation
+
+1. **Clone this repo**
    ```bash
-   npm install
-   ```
+   git clone https://github.com/your-username/UserAuthApp.git
+   cd UserAuthApp
 
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
+2. **Install dependencies**
 ```bash
-npm run reset-project
-```
+npm install
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+3. **Start Expo**
+```bash
+npx expo start
 
-## Learn more
+4.**Open the app in:**
+Expo Go (iOS/Android) → Scan QR code
+Android Emulator / iOS Simulator
 
-To learn more about developing your project with Expo, look at the following resources:
+## Tech Stack
+## Authentication Flow
+## Screenshots
+## License
+MIT License — free to use for personal & commercial projects.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
-# AuthApp
-# AuthApp
